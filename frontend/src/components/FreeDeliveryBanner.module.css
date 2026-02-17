@@ -1,0 +1,39 @@
+.bannerWrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.banner {
+  background-color: #ffe066;
+  color: #000;
+  text-align: center;
+  padding: 12px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.button {
+  background-color: #e23744;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #c12f3c;
+}

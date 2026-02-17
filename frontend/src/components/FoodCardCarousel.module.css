@@ -1,0 +1,66 @@
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  gap: 20px;
+  width: 85%;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Each food card will take 1/4 of the visible width */
+.carousel > * {
+  flex: 0 0 calc(25% - 20px); /* 4 cards visible */
+  scroll-snap-align: start;
+}
+
+/* Navigation buttons */
+.navButton {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  margin: 0 10px;
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.navButton:hover {
+  background-color: #f3f3f3;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .carousel > * {
+    flex: 0 0 calc(33.33% - 15px); /* 3 cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel > * {
+    flex: 0 0 calc(50% - 10px); /* 2 cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel > * {
+    flex: 0 0 100%; /* 1 card per view */
+  }
+}

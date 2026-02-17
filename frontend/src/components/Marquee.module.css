@@ -1,0 +1,30 @@
+.marqueeContainer {
+  width: 100%;
+  background-color: #e23744; /* Zomato Red */
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+}
+
+.marqueeContent {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  animation: scroll 15s linear infinite;
+}
+
+/* Pause on hover */
+.marqueeContainer:hover .marqueeContent {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

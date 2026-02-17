@@ -1,0 +1,189 @@
+/* =======================
+   CART PAGE LAYOUT
+======================= */
+.cartPage {
+  padding: 1.5rem 2rem 9rem;
+}
+
+/* =======================
+   CART HEADING
+======================= */
+.cartHeading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* =======================
+   CART ITEMS
+======================= */
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =======================
+   MISSING SOMETHING BANNER
+======================= */
+.missingBanner {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff7e6;
+  border-top: 1px solid #ffeeba;
+  border-bottom: 1px solid #ffeeba;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.addMoreBtn {
+  background-color: #e23744;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.addMoreBtn:hover {
+  background-color: #c12f3c;
+}
+
+/* =======================
+   BEST COUPON BANNER
+======================= */
+.bestCouponBanner {
+  background: #e8ffec;
+  border-left: 5px solid #28a745;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between; /* makes left + right area */
+  align-items: center;
+  color: #155724;
+  gap: 10px;
+}
+
+/* Left text block */
+.bestCouponText {
+  flex: 1;
+}
+
+/* Right - apply coupon button */
+.applyCouponRight {
+  flex-shrink: 0;
+}
+
+/* =======================
+   APPLY COUPON BUTTON
+======================= */
+.couponBtnWrapper {
+  display: flex;
+  justify-content: flex-end; /* Moves button to right side */
+  margin: 1rem 0;
+}
+
+.couponBtn {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.couponBtn:hover {
+  background-color: #e6e6e6;
+}
+
+/* =======================
+   CART SUMMARY SECTION
+======================= */
+.cartSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+@media(min-width: 768px) {
+  .cartSummary {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.clearBtn {
+  background-color: #f56565;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clearBtn:hover {
+  background-color: #c53030;
+}
+
+.totalText {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* =======================
+   PLACE ORDER SECTION
+======================= */
+/* ⭐ Fixed Bottom Place Order Section */
+.placeOrderSection {
+  position: sticky;        /* stays above footer */
+  bottom: 0;
+  background: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;  /* LEFT + RIGHT alignment */
+  align-items: center;
+  border-top: 1px solid #ddd;
+  z-index: 50;
+}
+
+/* Total text (left side) */
+.orderTotalText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Place Order button (RIGHT side) */
+.placeOrderBtn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.placeOrderBtn:hover {
+  background: #e84343;
+}

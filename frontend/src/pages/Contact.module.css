@@ -1,0 +1,122 @@
+.contactPage {
+  padding: 60px 20px;
+  background: #fff8ef;
+  min-height: 100vh;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.headerSection h1 {
+  font-size: 2.8rem;
+  color: #e23744;
+  margin-bottom: 10px;
+}
+
+.headerSection p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contactDetails {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactDetails h2 {
+  color: #e23744;
+  margin-bottom: 20px;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  color: #e23744;
+}
+
+/* Map */
+.map {
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Form */
+.formBox {
+  flex: 1.2;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formBox h2 {
+  color: #e23744;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 0.9rem;
+  margin: 10px 0 5px;
+  display: block;
+  color: #444;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+form textarea {
+  height: 140px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #e23744;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #c42432;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}

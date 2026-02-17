@@ -1,0 +1,112 @@
+/* MyOrders.module.css */
+
+.ordersPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.ordersPage h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #111827;
+}
+
+.orderCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.orderCard:hover {
+  transform: translateY(-3px);
+}
+
+.orderCard h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1f2937;
+}
+
+.orderCard p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0.2rem 0;
+}
+
+.orderCard hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 0.8rem 0;
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.orderItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 0.8rem;
+  flex-shrink: 0;
+}
+
+.orderItem div {
+  flex: 1;
+}
+
+.orderItem p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+.orderItem p:first-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+.orderItem p:last-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+.font-bold {
+  font-weight: 700;
+  color: #111827;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.text-green-600 {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .orderItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orderItem img {
+    margin-bottom: 0.5rem;
+  }
+
+  .orderItem p:last-child {
+    margin-top: 0.2rem;
+  }
+}

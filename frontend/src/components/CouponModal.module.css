@@ -1,0 +1,184 @@
+/* src/components/CouponModal.module.css */
+
+/* Overlay for background blur */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  backdrop-filter: blur(4px); /* blur the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 20px;
+  
+  
+}
+
+/* Modal container */
+.modal {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px; /* center column */
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 100px;
+  margin: 50px;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.applyBtn {
+  padding: 8px 16px;
+  background-color: #e23744;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.applyBtn:hover {
+  background-color: #c12f3c;
+}
+
+/* Cards container */
+.cardsContainer {
+  display: flex;
+  flex-direction: column; /* single column */
+  gap: 15px;
+}
+
+/* Individual card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+
+/* Top row with image and code */
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.cardImg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.codeWrapper {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.codeText {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+/* Statement, Description, and dotted line */
+.statement {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.dottedLine {
+  border: none;
+  border-top: 1px dotted #ccc;
+  margin: 6px 0;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Terms & Conditions */
+.termsHeading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.termsList {
+  list-style: disc inside;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* More button */
+.moreBtn {
+  background: none;
+  border: none;
+  color: #e23744;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 0;
+}
+
+.moreBtn:hover {
+  text-decoration: underline;
+}
+.disabledCode {
+  color: red;
+  opacity: 0.8;
+}
+
+.disabledBtn {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: #ccc !important;
+  color: #666 !important;
+  border: none;
+}
+
+.disabledCard {
+  background-color: #f9f9f9;
+}

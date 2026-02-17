@@ -1,0 +1,148 @@
+/* PAGE */
+.page {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  padding: 1.5rem;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+/* SUCCESS BOX */
+.successBox {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tick {
+  font-size: 55px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.orderId {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.time {
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ITEMS */
+.sectionTitle {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.itemsList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ITEM CARD */
+.itemCard {
+  background: #fff;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.itemImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.price {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* SUMMARY */
+.summary {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.summaryTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.summaryRow,
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 1rem;
+}
+
+.discount {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.total {
+  color: #e23744;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 2rem;
+  width: 100%;
+  background: #e23744;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #c12f3c;
+}
+
+/* EMPTY STATE */
+.empty {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.instructionBox {
+  background: #f5f5f5;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  border-left: 4px solid #e23744;
+}
