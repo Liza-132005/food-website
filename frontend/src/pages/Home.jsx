@@ -71,7 +71,7 @@ const Home = () => {
           <span className={styles.trendingBadge}>🔥 Customer Favourites</span>
           <h2 className={styles.mainHeading}>Most Frequently Ordered</h2>
           <p className={styles.subHeading}>
-            Dishes customers love the most — handpicked for you.
+            Dishes customers love the most — handpicked for just you.
           </p>
         </div>
 
